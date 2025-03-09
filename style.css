@@ -104,6 +104,52 @@ body {
 
 .proficiencyblock{
     border-width: 3px;
-    border-color: rgb(78, 78, 78);
-    border-radius: 30px;
+    border-bottom: 2px solid rgb(62, 62, 62);
+    border-left: 2px solid rgb(62, 62, 62); 
+    border-right: 2px solid rgb(62, 62, 62); 
+    background-color: aquamarine;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+    width: 60%; 
+    aspect-ratio: 9 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.proficiency{
+    background-color: #f4f4f4;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    transform: translateY(-10px);
+    z-index: 2;
+}
+.proficiencytop{
+    width: 60%;
+    aspect-ratio: 10 / 1; 
+    
+}
+.topR{
+    width: 35%;
+    float: right;
+    border-right: 2px solid rgb(62, 62, 62);
+    border-start-end-radius: 20px;
+    border-top: 2px solid rgb(62, 62, 62);
+    background-color: chartreuse;
+}
+.topL{
+    width: 35%;
+    float: left;
+    border-left: 2px solid rgb(62, 62, 62);
+    border-start-start-radius: 20px;
+    border-top: 2px solid rgb(62, 62, 62);
+    background-color: chartreuse;
+
+}
+.proftitle{
+    width:30%;
+    float: center;
 }
