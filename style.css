@@ -1,0 +1,45 @@
+.baserecblock {
+    width: 60vw; 
+    aspect-ratio: 5 / 3;
+    background-color: lightblue;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: 20px;
+    font-size: 2vw;
+    font-weight: bold;
+    border: 2px solid rgb(163, 35, 35);
+}
+
+.topicblock { 
+    height: -webkit-fill-available;
+    width: 60%;
+    background-color: rgb(182, 230, 173);
+    display: flex;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.projectsblock { 
+    width: 40%;
+    height: -webkit-fill-available;
+    flex-direction: column;
+    background-color: rgb(50, 52, 146);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.projectitem { 
+    width: -webkit-fill-available;
+    height: 33%;
+    background-color: rgb(44, 191, 103);
+    display: flex;
+    margin: 1px;
+}
