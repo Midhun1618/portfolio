@@ -1,14 +1,15 @@
+body {
+
+}
 .baserecblock {
-    width: 60vw; 
-    aspect-ratio: 5 / 3;
-    background-color: lightblue;
+    width: 60%; 
+    aspect-ratio: 8 / 3;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
     margin: 20px;
     font-size: 2vw;
     font-weight: bold;
-    border: 2px solid rgb(163, 35, 35);
 }
 
 .topicblock { 
@@ -20,13 +21,14 @@
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .projectsblock { 
     width: 40%;
     height: -webkit-fill-available;
     flex-direction: column;
-    background-color: rgb(50, 52, 146);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,5 +43,67 @@
     height: 33%;
     background-color: rgb(44, 191, 103);
     display: flex;
-    margin: 1px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.cspart{
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+}
+
+.portfolio{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.projectitem {
+    display: inline-block; /* Prevents full-width scaling */
+    transform-origin: center; /* Ensures smooth scaling */
+    transition: all 0.7s ease-in-out;
+}
+
+.projectitem:hover {
+    left: 120px;
+    transform: scale(1.3); /* Uniform scaling instead of scaleX and scaleY */
+    z-index: 2;
+}
+
+.projectitem:hover * {
+    transform: scale(1); /* Keeps text size fixed */
+}
+
+.profileplot{
+    background-color: blue;
+    border-radius: 50%;
+    width: 25%;
+    height: 66%;
+}
+.aboutblock{
+    width: 75%;
+    height: 66%;
+    border-radius: 20px;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    margin-left: 20px;
+    background-color: blueviolet;
+}
+
+.proficiencyblock{
+    border-width: 3px;
+    border-color: rgb(78, 78, 78);
+    border-radius: 30px;
 }
