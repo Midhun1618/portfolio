@@ -111,14 +111,14 @@ body {
 .topicblock {
     width: 60%;
     height: 90%;
-    background-color: rgb(182, 230, 173);
+    background: linear-gradient(135deg, rgb(219, 255, 242), rgb(101, 215, 146));
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     overflow: hidden;
     border-radius: 20px;
+    margin-right: 5px;
+    color: #333;
     position: relative; /* Needed for layering */
 }
 .projectsblock {
@@ -134,13 +134,14 @@ body {
 .projectitem {
     width: 90%;
     height: 33%;
-    background-color: rgb(44, 191, 103);
+    background: linear-gradient(135deg, rgb(101, 215, 146), rgb(119, 255, 173));
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px;
     border-radius: 20px;
     padding: 15px;
+    color: #ffffff;
     font-size: 1.5vw;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -148,13 +149,14 @@ body {
 
 .projectitem:hover {
     transform: scale(0.9);
+    opacity: 80%;
     z-index: 2;
 }
 
-.wipe-layer h2 {
+/* .wipe-layer h2 {
     font-size: 1.5vw;
     margin-bottom: 10px;
-}
+} */
 
 .wipe-layer img {
     width: 80%;
@@ -186,7 +188,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(44, 191, 103); /* Background of wipe-in layer */
+    background: linear-gradient(135deg, rgb(20, 150, 80), rgb(119, 255, 173));
     color: white;
     display: flex;
     flex-direction: column;

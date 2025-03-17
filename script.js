@@ -43,7 +43,6 @@ window.onload = function () {
             const description = this.dataset.description;
 
             wipeLayer.innerHTML = `
-                <h2>${title}</h2>
                 <img src="${image}" alt="${title}">
                 <p>${description}</p>
             `;
