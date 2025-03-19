@@ -23,13 +23,17 @@ body {
 
 .baserecblock {
     width: 60%;
-    aspect-ratio: 8 / 3;
+    aspect-ratio: 8 / 3;    
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px;
     font-size: 2vw;
     font-weight: bold;
+}
+
+.imgMain{
+    height: 35vh;
 }
 
 .profileplot {
@@ -40,6 +44,26 @@ body {
 }
 
 .aboutblock {
+    width: 75%;
+    height: 66%;
+    border-radius: 20px;
+    margin-left: 20px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutblocks {
     width: 75%;
     height: 66%;
     border-radius: 20px;
