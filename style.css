@@ -49,7 +49,7 @@ body {
     max-height: 66%; /* Ensures it doesn't overflow too much */
     border-radius: 20px;
     margin-left: 20px;
-    background-color: rgb(190, 128, 249);
+    background: linear-gradient(135deg,rgb(190, 128, 249), rgb(156, 96, 213));
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -59,10 +59,11 @@ body {
     overflow: hidden; /* Prevents overflow */
     word-wrap: break-word; /* Prevents text from overflowing */
     text-align: left; /* Centers the text */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .aboutblock p {
-    color: #202020;
+    color: #fafafa;
     font-size: 16px; 
     line-height: 1.5; /* Improves readability */
     margin: 10px 0;
