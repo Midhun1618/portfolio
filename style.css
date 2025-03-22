@@ -45,36 +45,34 @@ body {
 
 .aboutblock {
     width: 75%;
-    height: 66%;
+    height: auto; /* Change from fixed height to auto */
+    max-height: 66%; /* Ensures it doesn't overflow too much */
     border-radius: 20px;
     margin-left: 20px;
-    background-color: blueviolet;
+    background-color: rgb(190, 128, 249);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
     justify-content: center;
-    color: white;
-    font-size: 1.5vw;
-    font-weight: bold;
+    padding: 20px; /* Adds space inside */
+    box-sizing: border-box; /* Ensures padding is included in dimensions */
+    overflow: hidden; /* Prevents overflow */
+    word-wrap: break-word; /* Prevents text from overflowing */
+    text-align: left; /* Centers the text */
 }
+
+.aboutblock p {
+    color: #202020;
+    font-size: 16px; 
+    line-height: 1.5; /* Improves readability */
+    margin: 10px 0;
+}
+
 
 .flexBox{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.aboutblocks {
-    width: 75%;
-    height: 66%;
-    border-radius: 20px;
-    margin-left: 20px;
-    background-color: blueviolet;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.5vw;
-    font-weight: bold;
 }
 
 .profmain {
@@ -224,4 +222,57 @@ body {
     box-sizing: border-box;
     overflow-y: auto;
     z-index: 2;
+}
+
+
+@media (max-width: 768px) {
+    .portfolio {
+        font-size: 1.8rem;
+    }
+    .aboutblock {
+        font-size: 1.2rem;
+    }
+    .projectsblock {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projectitem {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .portfolio {
+        font-size: 1.5rem;
+    }
+    .aboutblock {
+        font-size: 1rem;
+        margin-left: 11vw;
+    }
+    .baserecblock, .profmain {
+        width: 95%;
+    }
+
+    .baserecblock  {
+        width: 85%;
+
+    }
+
+    #hello2{
+        display: flex;
+        gap: 10vw;
+    }
+
+
+
+    .profmain{
+        margin-top: 28vh;
+    }
+
+    #hello{
+        display: block;
+    }
+    .projectitem {
+        width: 100%;
+    }
 }
