@@ -84,30 +84,6 @@ body {
     margin-bottom: 20px;
 }
 
-.proficiencytop {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.topL {
-    width: 40%;
-    height: 20px;
-    border-left: 2px solid rgb(62, 62, 62);
-    border-top: 2px solid rgb(62, 62, 62);
-    border-top-left-radius: 20px;
-    background-color: #f4f4f4;
-}
-
-.topR {
-    width: 40%;
-    height: 20px;
-    border-right: 2px solid rgb(62, 62, 62);
-    border-top: 2px solid rgb(62, 62, 62);
-    border-top-right-radius: 20px;
-    background-color: #f4f4f4;
-}
-
 .proftitle {
     width: 30%;
     font-size: 1.5vw;
@@ -118,17 +94,17 @@ body {
 .proficiencyblock {
     box-sizing: border-box;
     width: 100%;
+    border-top: 2px solid rgb(62, 62, 62);
     border-left: 2px solid rgb(62, 62, 62);
     border-right: 2px solid rgb(62, 62, 62);
     border-bottom: 2px solid rgb(62, 62, 62);
     background-color: #f4f4f4;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    aspect-ratio: 9 / 3;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     font-size: 2vw;
     font-weight: bold;
+    padding: 2vw;
 }
 
 .topicblock {
