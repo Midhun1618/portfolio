@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 50vh;
     border-radius: 20px;
 }
 
@@ -43,6 +43,14 @@ body {
     height: 66%;
 }
 
+.aboutpersonal{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center
+
+}
+
 .aboutblock {
     width: 75%;
     height: auto; /* Change from fixed height to auto */
@@ -60,6 +68,11 @@ body {
     word-wrap: break-word; /* Prevents text from overflowing */
     text-align: left; /* Centers the text */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.smallicon{
+    margin: 5vhs;
+    padding: 3vh;
 }
 
 .aboutblock p {
@@ -80,6 +93,7 @@ body {
     width: 60%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -102,6 +116,7 @@ body {
     border-radius: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 2vw;
     font-weight: bold;
     padding: 2vw;
