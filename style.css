@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 50vh;
+    min-height: 20vh;
     border-radius: 20px;
 }
 
@@ -51,6 +51,18 @@ body {
 
 }
 
+.endline-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    background: linear-gradient(135deg,rgb(8, 37, 34), rgb(3, 39, 35));
+    border-top-right-radius: 5vh;
+    border-top-left-radius: 5vh;
+    box-shadow: 15px 15px 15px 15px rgba(0.3, 0.3, 0.3, 0.3);
+}
+
 .aboutblock {
     width: 75%;
     height: auto; /* Change from fixed height to auto */
@@ -71,6 +83,16 @@ body {
 }
 
 .smallicon{
+    height: 5vh;
+    width: 5vh;
+    margin: 5vhs;
+    padding: 3vh;
+    align-items: end;
+}
+
+.medicon{
+    height: 10vh;
+    width: 10vh;
     margin: 5vhs;
     padding: 3vh;
 }
@@ -103,6 +125,22 @@ body {
     font-size: 1.5vw;
     font-weight: bold;
     text-align: center;
+}
+
+.wtc{
+    min-height: 5vh;
+    width: 30vh;
+    border-radius: 3vh;
+    border-color: #fafafa;
+    font-size: 2vh;
+    color: #f4f4f4;
+    justify-content: center;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    align-content: center;
+    margin-right: 20vh;
 }
 
 .proficiencyblock {
@@ -164,6 +202,18 @@ body {
 .projectitem:hover {
     transform: scale(0.9);
     opacity: 80%;
+    z-index: 2;
+}
+
+.smallicon:hover {
+    transform: scale(1.3);
+    opacity: 100%;
+    z-index: 2;
+}
+
+.wtc:hover {
+    transform: scale(1.05);
+    opacity: 100%;
     z-index: 2;
 }
 
