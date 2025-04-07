@@ -3,168 +3,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Midhun K | Portfolio</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 class="portfolio">PORTFOLIO</h1>
-    
-    <div class="cspart">
-        <div id="hello" class="baserecblock">
-            <!-- <div class="profileplot"> -->
-                <img class="imgMain" src="profilemain.png" alt="error 404"/>
-            <!-- </div> -->
-            <div class="aboutblock">
-                <p><b>Hi, I'm Midhun,</b></p>
-                <p>I'm a B.Tech Computer Science and Engineering student specializing in Machine Learning. With expertise in Python, Java, Kotlin, Android and web development, I have worked on AI-driven applications and UI/UX-focused projects. Passionate about innovation, I love solving real-world problems through technology. Explore my portfolio to see my academic journey and projects in action!</p>
-            </div>
-        </div>
-        </div>
-        <div class="cspart">
-        <div class="profmain">
-            <div class="proficiencyblock">
-                <img class="medicon" src="iconx.png"/>
-                <img class="medicon" src="iconx.png"/>
-                <img class="medicon" src="iconx.png"/>
-                <img class="medicon" src="iconx.png"/>
-                <img class="medicon" src="iconx.png"/>
-            </div>
-        </div>
-    </div>
-    <div class="skillpart">
-        <div class="skillblocks">
-                <img class="skillicon" src="iconx.png"/>
 
-            <div class="skillcontent-H">
-                <b>Machine Learning</b>
+    <header>
+        <div class="container header-container">
+            <div class="logo">Midhun<span>KP</span></div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <div class="skillcontent">
-                Machine learning (ML) is a branch of artificial intelligence that enables computers to learn from data.
-It uses algorithms like neural networks, decision trees, and SVMs to recognize patterns.
-Python libraries such as TensorFlow, Scikit-learn, and PyTorch are widely used in ML.
-Applications include speech recognition, recommendation systems, and self-driving cars.
-Supervised, unsupervised, and reinforcement learning are the three main types of ML.
-With the rise of big data, ML is revolutionizing industries like healthcare, finance, and technology.
-            </div>
-            <div class="sample projects">
-                <div class="projectcards">
-                    Mood analysis
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span>Midhun KP</span></h1>
+                <p>Software Developer & B.Tech Student specializing in Machine Learning</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    <a href="#" class="btn" id="cv-download">Download CV</a>
                 </div>
             </div>
-            
         </div>
-        <div class="skillblocks">
-            <img class="skillicon" src="iconx.png"/>
+    </section>
 
-        <div class="skillcontent-H">
-            <b>Graphic Designer</b>
-        </div>
-
-        <div class="skillcontent">
-            I use design tools like Adobe Photoshop, Illustrator, and Figma to craft stunning visuals.
-            Graphic designers work on logos, branding, advertisements, social media posts, and UI/UX designs.
-            Creativity, color theory, typography, and layout design are essential skills in this field.
-            They collaborate with marketers, developers, and clients to bring ideas to life.
-            From print media to digital content, graphic design plays a key role in modern communication.
-        </div>
-        <div class="sample projects">
-            <div class="projectcards">
-                assets
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a Computer Science and Engineering student specializing in Machine Learning, with a passion for building innovative applications and exploring new technologies. Currently pursuing my B.Tech degree, I've developed several applications including mobile apps and machine learning systems.</p>
+                    <p>My goal is to leverage technology to create meaningful solutions that positively impact users. I'm particularly interested in artificial intelligence, mobile development, and building user-friendly applications.</p>
+                    <p>When I'm not coding, I enjoy learning about the latest advancements in technology and enhancing my skills through various online courses and practical projects.</p>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">Java</div>
+                    <div class="skill-item">Kotlin</div>
+                    <div class="skill-item">C</div>
+                    <div class="skill-item">C++</div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-item">HTML</div>
+                    <div class="skill-item">CSS</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">React.js</div>
+                </div>
+                <div class="skill-category">
+                    <h3>Mobile Development</h3>
+                    <div class="skill-item">Android</div>
+                    <div class="skill-item">Kotlin</div>
+                    <div class="skill-item">Java</div>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-item">Supervised Learning</div>
+                    <div class="skill-item">OpenCV</div>
+                    <div class="skill-item">Face Recognition</div>
+                    <div class="skill-item">LLMs</div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-item">Git</div>
+                    <div class="skill-item">Firebase</div>
+                    <div class="skill-item">Android Studio</div>
+                    <div class="skill-item">VS Code</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-tasks fa-3x"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">NoteItUp</h3>
+                        <p>A notebook-themed Android to-do list application with clean UI and intuitive task management features.</p>
+                        <div class="technologies">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-phone-alt fa-3x"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CallMood</h3>
+                        <p>A call-enhancement app with mood analysis that enhances user experience during phone calls.</p>
+                        <div class="technologies">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">ML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-camera fa-3x"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Real-time Face Recognition</h3>
+                        <p>A system that performs real-time face recognition using KNN algorithm and OpenCV library.</p>
+                        <div class="technologies">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">KNN</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <h3 class="cert-title">Android App Development using Kotlin</h3>
+                    <p class="cert-issuer">Meta</p>
+                    <p class="cert-date">2024</p>
+                </div>
+                <div class="cert-card">
+                    <h3 class="cert-title">Java Application Development</h3>
+                    <p class="cert-issuer">LPU</p>
+                    <p class="cert-date">2024</p>
+                </div>
+                <div class="cert-card">
+                    <h3 class="cert-title">Supervised Machine Learning</h3>
+                    <p class="cert-issuer">DeepLearning.AI</p>
+                    <p class="cert-date">2025</p>
+                </div>
+                <div class="cert-card">
+                    <h3 class="cert-title">Python Programming</h3>
+                    <p class="cert-issuer">Udemy</p>
+                    <p class="cert-date">2022</p>
+                </div>
+                <div class="cert-card">
+                    <h3 class="cert-title">Large Language Models (LLMs)</h3>
+                    <p class="cert-issuer">Google Cloud</p>
+                    <p class="cert-date">2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+            </div>
+            <div class="education-item">
+                <h3 class="education-title">B.Tech in Computer Science and Engineering</h3>
+                <p class="education-institution">Specialization in Machine Learning</p>
+                <p class="education-date">2022 - 2026 (Expected)</p>
+                <p class="education-description">Pursuing a comprehensive degree with focus on programming fundamentals, data structures, algorithms, machine learning, and software development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>Email</p>
+                            <a href="mailto:midhumidhun342@gmail.com">midhumidhun342@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>GitHub</p>
+                            <a href="https://github.com/midhun1618" target="_blank">github.com/midhun1618</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>LinkedIn</p>
+                            <a href="https://linkedin.com/in/midhun-kp" target="_blank">linkedin.com/in/midhun-kp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/midhun1618" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/midhun-kp" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:midhumidhun342@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 Midhun KP. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const nav = document.querySelector('nav');
         
-    </div>
-    <div class="skillblocks">
-        <img class="skillicon" src="iconx.png"/>
-
-    <div class="skillcontent-H">
-        <b>Android development</b>
-    </div>
-
-    <div class="skillcontent">
-        It involves using Java, Kotlin, and XML to create user-friendly interfaces and functionalities.
-Developers use Android Studio as the primary IDE for designing and coding apps.
-Apps can be developed for various purposes, including gaming, productivity, and social media.
-Android apps interact with hardware like GPS, camera, and sensors for enhanced experiences.
-With millions of users worldwide, Android development offers vast career opportunities.
-    </div>
-    <div class="sample projects">
-        <div class="projectcards">
-            Noteitup
-        </div>
-    </div>
-    
-</div>
-<div class="skillblocks">
-    <img class="skillicon" src="iconx.png"/>
-
-<div class="skillcontent-H">
-    <b>Web development</b>
-</div>
-
-<div class="skillcontent">
-    It is divided into front-end (HTML, CSS, JavaScript) and back-end (Node.js, Django, PHP, etc.) development.
-Developers use frameworks like React, Angular, and Vue.js for dynamic web applications.
-Websites can be static, dynamic, or interactive based on user requirements.
-Databases like MySQL, MongoDB, and PostgreSQL store and manage web data efficiently.
-With the rise of web-based services, web development is a high-demand skill.
-</div>
-<div class="sample projects">
-    <div class="projectcards">
-        portfolio
-    </div>
-</div>
-
-</div>
-    </div>
-
-
-        <div id="hello2" class="baserecblock">
-            <div class="topicblock">
-                <h1 class="main-title">MACHINE LEARNING</h1>
-                <div class="wipe-layer"></div>
-            </div>
-            <div class="projectsblock">
-                <div class="projectitem" 
-                    data-title="Face Recognition using CV"
-                    data-image="project1.jpg"
-                    data-description="Python developed model applied in real-world scenarios.
-                    - Image processing
-                    - object tracking
-                    - openCV library">
-                    Face Recognition
-                </div>
-                <div class="projectitem" 
-                    data-title="Project 1: Deep Learning"
-                    data-image="project1.jpg"
-                    data-description="A deep learning model applied in real-world scenarios.
-                    - Image processing
-                    - Object detection
-                    - Natural Language Processing (NLP)">
-                    Project 2
-                </div>
-                <div class="projectitem" 
-                    data-title="Project 1: Deep Learning"
-                    data-image="project1.jpg"
-                    data-description="A deep learning model applied in real-world scenarios.">
-                    Project 3
-                </div>
-            </div>
-
-            
-        </div>
-        <div class="endline-section">
-        <div class="wtc">
-            Want to connect?
-        </div>
-            
-            <img class="smallicon" src="gmailicon.png"/>
-            <img class="smallicon" src="githubicon.png"/>
-            <img class="smallicon" src="linkedinicon.png"/>
-
-        </div>
-    </div>
-    <script src="script.js"></script>
+        mobileMenu.addEventListener('click', function() {
+            nav.classList.toggle('active');
+            if (nav.classList.contains('active')) {
+                mobileMenu.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                    mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+                
+                const targetId = this.getAttribute('href');
+                
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Scroll animation
+        const sections = document.querySelectorAll('section');
+        
+        function checkInView() {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (sectionTop < windowHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', checkInView);
+        window.addEventListener('load', checkInView);
+        
+        // Form submission (prevent default for demo)
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thanks for your message! In a real implementation, this would send an email.');
+                contactForm.reset();
+            });
+        }
+        
+        // Dummy CV download
+        const cvButton = document.getElementById('cv-download');
+        if (cvButton) {
+            cvButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('In a real implementation, this would download your CV file.');
+            });
+        }
+    </script>
 </body>
+</html>
 </html>
