@@ -225,6 +225,13 @@ nav ul li a:hover::after {
     margin-top: 80px;
 }
 
+.profile-image {
+    width: 20vw; /* adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; /* center image and add spacing below */
+}
+
 .about-content {
     display: flex;
     flex-wrap: wrap;
