@@ -198,16 +198,19 @@ nav ul li a:hover::after {
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 1.6rem;
+    margin-bottom: -3vh;
 }
 
 .hero h1 span {
     color: var(--accent);
+    font-size: 3rem;
+    padding-bottom: 3vh;
 }
 
 .hero p {
     font-size: 1.2rem;
+    margin-top: 2vh;
     margin-bottom: 30px;
 }
 
