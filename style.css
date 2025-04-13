@@ -194,7 +194,7 @@ nav ul li a:hover::after {
 
 .hero-content {
     max-width: 700px;
-    text-align: left; /* Ensure text is always left-aligned */
+    text-align: left;
 }
 
 .hero h1 {
