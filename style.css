@@ -406,7 +406,6 @@ nav ul li a:hover::after {
     font-size: 0.95rem;
 }
 
-/* Contact Section */
 .contact {
     background-color: white;
 }
@@ -482,6 +481,12 @@ footer {
     font-size: 1.2rem;
     transition: var(--transition);
 }
+.social-links img {
+    width: 30px;
+    height: 30px; 
+    padding: 5px;            
+}
+
 
 .social-links a:hover {
     background-color: var(--accent);
