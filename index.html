@@ -347,33 +347,74 @@
     </footer>
 
     <script>
-const contactForm = document.getElementById('contactForm');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const nav = document.querySelector('nav');
 
-if (contactForm) {
-    contactForm.addEventListener('submit', async function (e) {
-        e.preventDefault();
-        const formData = new FormData(contactForm);
-
-        try {
-            const response = await fetch(contactForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            });
-
-            if (response.ok) {
-                alert('✅ Your message has been sent successfully!');
-                contactForm.reset();
+        mobileMenu.addEventListener('click', function () {
+            nav.classList.toggle('active');
+            if (nav.classList.contains('active')) {
+                mobileMenu.innerHTML = '<i class="fas fa-times"></i>';
             } else {
-                alert('⚠️ Oops! Something went wrong. Please try again.');
+                mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
             }
-        } catch (error) {
-            alert('❌ Unable to send message. Please check your internet connection.');
-        }
-    });
-}
-</script>
+        });
 
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                if (nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                    mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+
+                const targetId = this.getAttribute('href');
+
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        const sections = document.querySelectorAll('section');
+
+        function checkInView() {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (sectionTop < windowHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkInView);
+        window.addEventListener('load', checkInView);
+
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('Thanks for your message! In a real implementation, this would send an email.');
+                contactForm.reset();
+            });
+        }
+
+        const cvButton = document.getElementById('cv-download');
+        if (cvButton) {
+            cvButton.addEventListener('click', function (e) {
+
+            });
+        }
+    </script>
 </body>
 
 </html>
