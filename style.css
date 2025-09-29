@@ -234,6 +234,7 @@ nav ul li a:hover::after {
     height: auto;
     display: block;
     margin: 0 auto 10px auto; 
+    border-radius: 10vw;
 }
 
 .about-content {
