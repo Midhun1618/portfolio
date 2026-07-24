@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
+        rel="stylesheet">\
+    <link rel="script" href="./script.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -422,13 +423,22 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="text" placeholder="Subject">
-                        <textarea placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
+                    <div class="contact-form">
+                        <form id="contactForm" action="https://formspree.io/f/xbdnzbjo" method="POST">
+
+                            <input type="text" name="name" placeholder="Your Name" required>
+
+                            <input type="email" name="email" placeholder="Your Email" required>
+
+                            <input type="text" name="subject" placeholder="Subject">
+
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+
+                            <button type="submit" class="btn">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -440,7 +450,7 @@
                     class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/midhun-kp" target="_blank" aria-label="LinkedIn"><i
                     class="fab fa-linkedin"></i></a>
-            <a href="mailto:midhumidhun342@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:midhunkp.work@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
         <p>&copy; 2026 Midhun KP. All rights reserved.</p>
     </footer>
@@ -490,12 +500,39 @@
         window.addEventListener('scroll', checkInView);
         window.addEventListener('load', checkInView);
 
-        const contactForm = document.getElementById('contactForm');
+        const contactForm = document.getElementById("contactForm");
+
         if (contactForm) {
-            contactForm.addEventListener('submit', function (e) {
+            contactForm.addEventListener("submit", async (e) => {
                 e.preventDefault();
-                alert('Thanks for your message! In a real implementation, this would send an email.');
-                contactForm.reset();
+
+                const submitBtn = contactForm.querySelector("button");
+                const originalText = submitBtn.textContent;
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = "Sending...";
+
+                try {
+                    const response = await fetch(contactForm.action, {
+                        method: "POST",
+                        body: new FormData(contactForm),
+                        headers: {
+                            Accept: "application/json"
+                        }
+                    });
+
+                    if (response.ok) {
+                        alert("Thank you! Your message has been sent.");
+                        contactForm.reset();
+                    } else {
+                        alert("Failed to send message. Please try again.");
+                    }
+                } catch (error) {
+                    alert("Network error. Please try again.");
+                }
+
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
             });
         }
     </script>
