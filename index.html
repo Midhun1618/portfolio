@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midhun KP | Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
     <header>
         <div class="container header-container">
-            <div class="logo">MidhunKP</div>
+            <div class="logo">midhun<span>.kp</span></div>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -32,17 +35,22 @@
     </header>
 
     <section class="hero" id="home">
-        <div class="container">
+        <div class="container hero-inner">
             <div class="hero-content">
-                <img src="displayprofile.png" alt=" " class="profile-image" />
-                <h1>Hello, I'm</h1>
-                <h1><span>Midhun KP</span></h1>
-                <p>Machine Learning & Android Developer</p>
+                <div class="prompt-line">midhun@kp:~$ machine-learning · android-dev<span class="cursor"></span></div>
+                <h1>Hi, I'm <span class="name">Midhun KP</span></h1>
+                <p class="role">I build Android apps and AI-powered tools that turn ambitious ideas into working
+                    software — from cross-platform productivity systems to retrieval-augmented AI assistants.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn">Projects</a>
-                    <a href="#contact" class="btn btn-outline">Get in touch</a>
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
                     <a href="https://drive.google.com/file/d/1geEckoPin8cCXad10GcFAWZhH1I3FHV2/view?usp=sharing"
-                        class="btn" id="cv-download">CV</a>
+                        class="btn btn-outline" id="cv-download">Download CV</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <div class="profile-frame">
+                    <img src="displayprofile.png" alt="Midhun KP" />
                 </div>
             </div>
         </div>
@@ -50,24 +58,37 @@
 
     <section class="about" id="about">
         <div class="container">
-
-
             <div class="section-title">
-
-                <h2>About Me</h2>
+                <span class="eyebrow">About</span>
+                <h2>Building things that work</h2>
+                <div class="rule"></div>
             </div>
-            <div class="about-content">
+            <div class="about-grid">
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-num">6+</span>
+                        <span class="stat-label">Shipped Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">5</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">2026</span>
+                        <span class="stat-label">Graduating</span>
+                    </div>
+                </div>
                 <div class="about-text">
-                    <p>I build Android apps and AI-powered tools that solve real problems. From a
-                        cross-platform voice-controlled productivity ecosystem spanning Android and Windows,
-                        to an AI health assistant that analyzes symptoms and surfaces emergency guidance —
-                        my projects are focused on making technology feel useful, not just functional.</p>
+                    <p>I build Android apps and AI-powered tools that solve real problems. From a cross-platform
+                        voice-controlled productivity ecosystem spanning Android and Windows, to an AI health
+                        assistant that analyzes symptoms and surfaces emergency guidance — my projects are focused
+                        on making technology feel useful, not just functional.</p>
                     <p>I'm a final-year CSE student at LPU specializing in Machine Learning, with hands-on
-                        experience across Kotlin, Python, React, and Firebase. I've shipped projects across
-                        mobile, desktop, and web — and I'm comfortable working across the full stack when
-                        the problem demands it.</p>
-                    <p>Currently looking for opportunities where I can build things that matter, work with
-                        people who care about quality, and keep growing fast.</p>
+                        experience across Kotlin, Python, React, and Firebase. I've shipped projects across mobile,
+                        desktop, and web — and I'm comfortable working across the full stack when the problem
+                        demands it.</p>
+                    <p>Currently looking for opportunities where I can build things that matter, work with people
+                        who care about quality, and keep growing fast.</p>
                 </div>
             </div>
         </div>
@@ -76,11 +97,13 @@
     <section class="skills" id="skills">
         <div class="container">
             <div class="section-title">
-                <h2>My Skills</h2>
+                <span class="eyebrow">Skills</span>
+                <h2>Tools I work with</h2>
+                <div class="rule"></div>
             </div>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                    <h3>Languages</h3>
                     <div class="skill-item"><i class="fab fa-python"></i> Python</div>
                     <div class="skill-item"><i class="fab fa-java"></i> Java</div>
                     <div class="skill-item"><i class="fas fa-code"></i> Kotlin</div>
@@ -108,7 +131,7 @@
                     <div class="skill-item"><i class="fas fa-robot"></i> LLMs</div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
+                    <h3>Tools &amp; Platforms</h3>
                     <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
                     <div class="skill-item"><i class="fas fa-fire"></i> Firebase</div>
                     <div class="skill-item"><i class="fas fa-mobile-alt"></i> Android Studio</div>
@@ -118,23 +141,23 @@
         </div>
     </section>
 
-
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-title">
-                <h2>My Projects</h2>
+                <span class="eyebrow">Projects</span>
+                <h2>Selected work</h2>
+                <div class="rule"></div>
             </div>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-img">
-                        <img class="img-proj" src="vox_eco.png" alt="VOX Ecosystem" />
+                        <img src="vox_eco.png" alt="VOX Ecosystem" />
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">VOX – Cross-Platform Productivity Ecosystem</h3>
-                        <p>A cross-platform productivity ecosystem connecting Android and Windows Desktop
-                            applications with real-time task synchronization, secure device pairing via Google
-                            Authentication, and voice-powered command execution including app control, search,
-                            and system management.</p>
+                        <h3 class="project-title">VOX — Cross-Platform Productivity Ecosystem</h3>
+                        <p>Connects Android and Windows Desktop apps with real-time task synchronization, secure
+                            device pairing via Google Authentication, and voice-powered command execution including
+                            app control, search, and system management.</p>
                         <div class="technologies">
                             <span class="tech-tag">Kotlin</span>
                             <span class="tech-tag">Java</span>
@@ -143,20 +166,20 @@
                             <span class="tech-tag">Voice Recognition</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Midhun1618/VOX-Android" class="btn btn-outline">Android</a>
-                            <a href="https://github.com/Midhun1618/VOX-PC" class="btn btn-outline">Desktop</a>
+                            <a href="https://github.com/Midhun1618/VOX-Android" class="btn btn-outline btn-sm">Android</a>
+                            <a href="https://github.com/Midhun1618/VOX-PC" class="btn btn-outline btn-sm">Desktop</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img">
-                        <img class="img-proj" src="haai.png" alt="HAAi app image" />
+                        <img src="haai.png" alt="HAAi app" />
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">HAAi – Health Assistance AI</h3>
-                        <p>An AI-powered Android application that analyzes user symptoms to provide basic health
-                            awareness, preventive tips, and emergency assistance. Designed to help users understand
-                            possible conditions while promoting informed health decisions.</p>
+                        <h3 class="project-title">HAAi — Health Assistance AI</h3>
+                        <p>Analyzes user symptoms to provide basic health awareness, preventive tips, and emergency
+                            assistance — helping users understand possible conditions while promoting informed
+                            health decisions.</p>
                         <div class="technologies">
                             <span class="tech-tag">Kotlin</span>
                             <span class="tech-tag">Android</span>
@@ -164,27 +187,20 @@
                             <span class="tech-tag">AI Integration</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-outline">Live Demo</a>
-                            <a href="https://github.com/Midhun1618/HAAi" class="btn btn-outline">View Project</a>
+                            <a href="#" class="btn btn-outline btn-sm">Live Demo</a>
+                            <a href="https://github.com/Midhun1618/HAAi" class="btn btn-outline btn-sm">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img">
-                        <img class="img-proj" src="octovector.png" alt="OctoVector AI image" />
+                        <img src="octovector.png" alt="OctoVector AI" />
                     </div>
-
                     <div class="project-content">
-                        <h3 class="project-title">OctoVector AI – Retrieval-Augmented Intelligence System</h3>
-
-                        <p>
-                            A production-style RAG system built with FastAPI and React that enables
-                            intelligent PDF understanding through advanced retrieval engineering.
-                            Implements hybrid retrieval using Dense + Sparse search, Reciprocal Rank
-                            Fusion (RRF), Cross Encoder reranking, and grounded Gemini-based response
-                            generation for accurate, context-aware answers.
-                        </p>
-
+                        <h3 class="project-title">OctoVector AI — Retrieval-Augmented Intelligence</h3>
+                        <p>A production-style RAG system built with FastAPI and React for intelligent PDF
+                            understanding. Implements hybrid Dense + Sparse retrieval, Reciprocal Rank Fusion,
+                            Cross-Encoder reranking, and grounded Gemini-based response generation.</p>
                         <div class="technologies">
                             <span class="tech-tag">FastAPI</span>
                             <span class="tech-tag">React</span>
@@ -193,76 +209,69 @@
                             <span class="tech-tag">SentenceTransformers</span>
                             <span class="tech-tag">Gemini API</span>
                         </div>
-
                         <div class="project-links">
-                            <a href="https://octovector-ai.onrender.com/" class="btn btn-outline">Live Demo</a>
-                            <a href="https://github.com/Midhun1618/OctoVector-AI" class="btn btn-outline">
-                                View Project
-                            </a>
+                            <a href="https://octovector-ai.onrender.com/" class="btn btn-outline btn-sm">Live Demo</a>
+                            <a href="https://github.com/Midhun1618/OctoVector-AI" class="btn btn-outline btn-sm">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img">
-                        <img class="img-proj" src="repsocope.png" alt="RepoScope image" />
+                        <img src="repsocope.png" alt="RepoScope" />
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">RepoScope</h3>
-                        <p>A full-stack GitHub repository analytics platform that combines rule-based metrics and
+                        <p>A full-stack GitHub repository analytics platform combining rule-based metrics and
                             AI-powered insights to evaluate repository health, risk, consistency, and long-term
                             evolution.</p>
                         <div class="technologies">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">Express</span>
-                            <span class="tech-tag">CI CD</span>
+                            <span class="tech-tag">CI/CD</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://reposcope-for-dev.onrender.com" class="btn btn-outline">Live Demo</a>
-                            <a href="https://github.com/Midhun1618/RepoScope" class="btn btn-outline">View Project</a>
+                            <a href="https://reposcope-for-dev.onrender.com" class="btn btn-outline btn-sm">Live Demo</a>
+                            <a href="https://github.com/Midhun1618/RepoScope" class="btn btn-outline btn-sm">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img">
-                        <img class="img-proj" src="callmoodproj.png" alt="image" />
-
+                        <img src="callmoodproj.png" alt="CallMood" />
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">CallMood</h3>
-                        <p>A call-enhancement app with mood analysis that enhances user experience during phone calls.
-                        </p>
+                        <p>A call-enhancement app with mood analysis that improves the user experience during phone
+                            calls.</p>
                         <div class="technologies">
                             <span class="tech-tag">Kotlin</span>
                             <span class="tech-tag">Android</span>
                             <span class="tech-tag">ML</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Midhun1618/callmood" class="btn btn-outline">View Project</a>
+                            <a href="https://github.com/Midhun1618/callmood" class="btn btn-outline btn-sm">View Project</a>
                         </div>
                     </div>
                 </div>
-
-
                 <div class="project-card">
                     <div class="project-img">
-                        <img class="img-proj" src="face_recog.png" alt="image" />
+                        <img src="face_recog.png" alt="Real-time Face Recognition" />
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Real-time Face Recognition</h3>
-                        <p>A system that performs real-time face recognition using KNN algorithm and OpenCV library.</p>
+                        <p>A system that performs real-time face recognition using the KNN algorithm and the OpenCV
+                            library.</p>
                         <div class="technologies">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">OpenCV</span>
                             <span class="tech-tag">KNN</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Midhun1618/Face-Recognition-System" class="btn btn-outline">View
-                                Project</a>
+                            <a href="https://github.com/Midhun1618/Face-Recognition-System" class="btn btn-outline btn-sm">View Project</a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -270,71 +279,71 @@
     <section class="certifications" id="certifications">
         <div class="container">
             <div class="section-title">
-                <h2>Certifications</h2>
+                <span class="eyebrow">Certifications</span>
+                <h2>Continued learning</h2>
+                <div class="rule"></div>
             </div>
             <div class="cert-grid">
                 <div class="cert-card">
                     <div class="certificate-img">
-                        <img class="img-certif" src="supervisedml_cert.png" alt="image" />
+                        <img src="supervisedml_cert.png" alt="Supervised Machine Learning certificate" />
                     </div>
                     <h3 class="cert-title">Supervised Machine Learning</h3>
                     <p class="cert-issuer">DeepLearning.AI</p>
-                    <p class="cert-date">2025</p>
+                    <span class="cert-date">2025</span>
                     <div class="project-links">
                         <a href="https://www.coursera.org/account/accomplishments/verify/CJ7A3U92SFDQ"
-                            class="btn btn-outline">View Certificate</a>
+                            class="btn btn-outline btn-sm">View Certificate</a>
                     </div>
                 </div>
                 <div class="cert-card">
                     <div class="certificate-img">
-                        <img class="img-certif" src="web_cert.png" alt="image" />
+                        <img src="web_cert.png" alt="Web Development Training certificate" />
                     </div>
                     <h3 class="cert-title">Web Development Training</h3>
                     <p class="cert-issuer">Internsala</p>
-                    <p class="cert-date">2025</p>
+                    <span class="cert-date">2025</span>
                     <div class="project-links">
                         <a href="https://drive.google.com/file/d/1E6vd2EKywFKXIkxVU16b9Sbnog9liWwk/view?usp=sharing"
-                            class="btn btn-outline">View Certificate</a>
+                            class="btn btn-outline btn-sm">View Certificate</a>
                     </div>
                 </div>
                 <div class="cert-card">
                     <div class="certificate-img">
-                        <img class="img-certif" src="kotlin_cert.png" alt="image" />
+                        <img src="kotlin_cert.png" alt="Android App Development using Kotlin certificate" />
                     </div>
                     <h3 class="cert-title">Android App Development using Kotlin</h3>
                     <p class="cert-issuer">Meta</p>
-                    <p class="cert-date">2024</p>
+                    <span class="cert-date">2024</span>
                     <div class="project-links">
                         <a href="https://www.coursera.org/account/accomplishments/verify/I7WQ7JO7M1KM"
-                            class="btn btn-outline">View Certificate</a>
+                            class="btn btn-outline btn-sm">View Certificate</a>
                     </div>
                 </div>
                 <div class="cert-card">
                     <div class="certificate-img">
-                        <img class="img-certif" src="javaapp_cert.png" alt="image" />
+                        <img src="javaapp_cert.png" alt="Java Application Development certificate" />
                     </div>
                     <h3 class="cert-title">Java Application Development</h3>
                     <p class="cert-issuer">LPU</p>
-                    <p class="cert-date">2024</p>
+                    <span class="cert-date">2024</span>
                     <div class="project-links">
                         <a href="https://drive.google.com/file/d/16YkahyWXa_0mkfSKlfVxOLcQYv09HNow/view?usp=sharing"
-                            class="btn btn-outline">View Certificate</a>
+                            class="btn btn-outline btn-sm">View Certificate</a>
                     </div>
                 </div>
-
                 <div class="cert-card">
                     <div class="certificate-img">
-                        <img class="img-certif" src="python_cert.png" alt="image" />
+                        <img src="python_cert.png" alt="Python Programming certificate" />
                     </div>
                     <h3 class="cert-title">Python Programming</h3>
                     <p class="cert-issuer">Udemy</p>
-                    <p class="cert-date">2022</p>
+                    <span class="cert-date">2022</span>
                     <div class="project-links">
                         <a href="https://www.udemy.com/certificate/UC-436fc6fb-49c7-4920-86c2-c8251cc45592/"
-                            class="btn btn-outline">View Certificate</a>
+                            class="btn btn-outline btn-sm">View Certificate</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -342,50 +351,40 @@
     <section class="education" id="education">
         <div class="container">
             <div class="section-title">
-                <h2>Education</h2>
+                <span class="eyebrow">Education</span>
+                <h2>Academic background</h2>
+                <div class="rule"></div>
             </div>
             <div class="education-item">
                 <h3 class="education-title">B.Tech in Computer Science and Engineering</h3>
-                <p class="education-institution">Specialization in Machine Learning</p>
-                <p class="education-date">2022 - 2026 (Expected)</p>
-                <p class="education-description">Pursuing a comprehensive degree with focus on programming fundamentals,
-                    data structures, algorithms, machine learning, and software development.</p>
+                <p class="education-institution">Specialization in Machine Learning · Lovely Professional University</p>
+                <span class="education-date">2022 – 2026 (Expected)</span>
+                <p class="education-description">Pursuing a comprehensive degree with focus on programming
+                    fundamentals, data structures, algorithms, machine learning, and software development.</p>
             </div>
         </div>
     </section>
+
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Get In Touch</h2>
+                <span class="eyebrow">Contact</span>
+                <h2>Get in touch</h2>
+                <div class="rule"></div>
             </div>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <p>Email</p>
-                            <a href="mailto:midhumidhun342@gmail.com">midhunkp.work@gmail.com</a>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text"><a href="mailto:midhumidhun342@gmail.com">midhumidhun342@gmail.com</a></div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-text">
-                            <p>GitHub</p>
-                            <a href="https://github.com/midhun1618" target="_blank">github.com/midhun1618</a>
-                        </div>
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div class="contact-text"><a href="https://github.com/midhun1618" target="_blank">github.com/midhun1618</a></div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="contact-text">
-                            <p>LinkedIn</p>
-                            <a href="https://linkedin.com/in/midhun-kp" target="_blank">linkedin.com/in/midhun-kp</a>
-                        </div>
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="contact-text"><a href="https://linkedin.com/in/midhun-kp" target="_blank">linkedin.com/in/midhun-kp</a></div>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -402,17 +401,12 @@
     </section>
 
     <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/midhun1618" target="_blank">
-                    <img src="github-logo.png" /></a>
-                <a href="https://linkedin.com/in/midhun-kp" target="_blank">
-                    <img src="linkedin.png" /></a>
-                <a href="mailto:midhumidhun342@gmail.com">
-                    <img src="envelope.png" /></a>
-            </div>
-            <p>&copy; 2026 Midhun KP. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/midhun1618" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/midhun-kp" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:midhumidhun342@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
+        <p>&copy; 2026 Midhun KP. All rights reserved.</p>
     </footer>
 
     <script>
@@ -421,31 +415,24 @@
 
         mobileMenu.addEventListener('click', function () {
             nav.classList.toggle('active');
-            if (nav.classList.contains('active')) {
-                mobileMenu.innerHTML = '<i class="fas fa-times"></i>';
-            } else {
-                mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
-            }
+            mobileMenu.innerHTML = nav.classList.contains('active')
+                ? '<i class="fas fa-times"></i>'
+                : '<i class="fas fa-bars"></i>';
         });
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-
                 if (nav.classList.contains('active')) {
                     nav.classList.remove('active');
                     mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
                 }
-
                 const targetId = this.getAttribute('href');
-
                 if (targetId === '#') return;
-
                 const targetElement = document.querySelector(targetId);
-
                 if (targetElement) {
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80,
+                        top: targetElement.offsetTop - 70,
                         behavior: 'smooth'
                     });
                 }
@@ -458,7 +445,6 @@
             sections.forEach(section => {
                 const sectionTop = section.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
-
                 if (sectionTop < windowHeight - 100) {
                     section.classList.add('visible');
                 }
@@ -476,16 +462,7 @@
                 contactForm.reset();
             });
         }
-
-        const cvButton = document.getElementById('cv-download');
-        if (cvButton) {
-            cvButton.addEventListener('click', function (e) {
-
-            });
-        }
     </script>
 </body>
-
-</html>
 
 </html>
